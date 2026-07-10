@@ -1,52 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Producto | Veltrozans</title>
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
-
 <body>
-
     <header class="navbar-wrapper">
-
         <a href="index.html" class="logo">
             VELTROSANZSTORE
         </a>
-
         <span class="menu-icono" id="menu-btn">☰ Menú</span>
-
         <nav class="navbar" id="menu-nav">
-
             <ul>
-
                 <li><a href="index.html">Inicio</a></li>
-
                 <li><a href="calzado.html">Calzado</a></li>
-
                 <li><a href="relojes.html">Relojes</a></li>
-
                 <li><a href="lociones.html">Lociones</a></li>
-
                 <li><a href="https://wa.me/573118378752" target="_blank">Contacto</a></li>
-
             </ul>
-
         </nav>
-
     </header>
-
-    <section class="producto-detalle">
-
+    <!-- id="producto-detalle-dynamic" le avisa a script.js que esta página
+         debe llenarse dinámicamente leyendo ?tipo= y &idx= de la URL -->
+    <section class="producto-detalle" id="producto-detalle-dynamic">
         <div class="volver-wrapper">
             <button class="btn-volver" onclick="history.back()">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -56,60 +35,43 @@
                 Volver
             </button>
         </div>
-
         <div class="producto-imagen">
-
-            <img src="images/imagenes/zapatilla7.png" alt="New Balance 574">
+            <img id="producto-img" src="" alt="">
         </div>
-
         <div class="producto-info">
-
             <span class="marca">
                 VELTROZANS
             </span>
-
-            <h1>New Balance 574</h1>
-
-            <h2>$280.000</h2>
-
-            <span class="disponible">
+            <h1 id="producto-nombre">Cargando...</h1>
+            <h2 id="producto-precio"></h2>
+            <span id="producto-disponibilidad" class="disponible">
                 Disponible
             </span>
 
-            <h3>Tallas</h3>
-
-            <div class="tallas">
-                <button class="talla-btn">36</button>
-                <button class="talla-btn">37</button>
-                <button class="talla-btn">38</button>
-                <button class="talla-btn">39</button>
-                <button class="talla-btn">40</button>
-                <button class="talla-btn">41</button>
-                <button class="talla-btn">42</button>
+            <!-- Las tallas solo aplican a calzado; script.js las oculta para relojes/lociones -->
+            <div id="tallas-section">
+                <h3>Tallas</h3>
+                <div class="tallas">
+                    <button class="talla-btn">36</button>
+                    <button class="talla-btn">37</button>
+                    <button class="talla-btn">38</button>
+                    <button class="talla-btn">39</button>
+                    <button class="talla-btn">40</button>
+                    <button class="talla-btn">41</button>
+                    <button class="talla-btn">42</button>
+                </div>
             </div>
 
-            <p>
-
-                Diseño clásico, elegante y cómodo para cualquier ocasión.
-                Ideal para uso diario y outfits casuales.
-
+            <p id="producto-descripcion">
+                Producto original Veltrozans. Escríbenos por WhatsApp para más
+                información, disponibilidad y coordinar tu pedido.
             </p>
-
-            <a href="https://wa.me/573118378752?text=Hola,%20quiero%20información%20del%20New%20Balance%20574"
-                class="btn-whatsapp" target="_blank">
-
+            <a id="producto-whatsapp-btn" href="https://wa.me/573118378752" class="btn-whatsapp" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
-
                 Pedir por WhatsApp
-
             </a>
-
         </div>
-
     </section>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>

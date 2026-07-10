@@ -1381,7 +1381,7 @@ img {
 
     background:
         linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
-        url("images/calzado1.jpg");
+        url("images/imagenes calzado/calzado-01.jpg");
 
     background-size: cover;
 
@@ -1616,9 +1616,19 @@ img {
 
 .producto-btns {
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-top: auto;
     padding-top: 20px;
+}
+
+/* Precio centrado en su propia línea, arriba de los botones */
+.producto-precio-centrado {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #d6c28a;
+    margin: 8px 0;
 }
 
 .producto-btns a {

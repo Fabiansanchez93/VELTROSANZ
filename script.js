@@ -3,127 +3,97 @@ const WHATSAPP_NUMBER = '573118378752'; // ← pon aquí el número correcto
 
 // ===== IMÁGENES DE RESPALDO (mientras subes las fotos reales) =====
 const IMAGEN_RESPALDO = {
-    calzado: 'images/imagenes/zapatilla7.png',
-    relojes: 'images/imagenes relojes/reloj1.svg.jpg',
+    calzado: 'images/imagenes calzado/zapatilla11.png',
+    relojes: 'images/imagenes relojes/reloj-01.jpg',
     lociones: 'images/imagenes lociones/loción1.svg.jpg'
+};
+
+// ===== CARPETAS Y PREFIJOS DE IMÁGENES POR CATEGORÍA =====
+// Aquí defines en qué carpeta está cada categoría y cómo empiezan sus archivos.
+// Ejemplo: relojes -> images/imagenes relojes/reloj-01.jpg
+const CARPETA_IMG = {
+    calzado: 'images/imagenes calzado',
+    relojes: 'images/imagenes relojes',
+    lociones: 'images/imagenes lociones'
+};
+
+const PREFIJO_IMG = {
+    calzado: 'calzado',
+    relojes: 'reloj',
+    lociones: 'locion'
+};
+
+// ===== DESCRIPCIONES GENÉRICAS DE RELOJES (por categoría) =====
+// Se usan en producto.html cuando no se tiene una descripción específica
+// de marca/modelo para cada reloj individual.
+const DESCRIPCION_RELOJ = {
+    hombre: 'Reloj elegante para hombre, ideal para uso diario o formal.',
+    mujer: 'Reloj femenino que combina estilo y elegancia para cualquier ocasión.',
+    deportivo: 'Reloj resistente, perfecto para actividad física y uso diario.'
 };
 
 // ===== DATOS DE PRODUCTOS =====
 // Formato: [nombre, precio, categoria, disponible, numeroDeImagen]
-// La imagen busca en images/catalogo/<tipo>/<tipo>-XX.jpg — si no existe,
+// La imagen busca en <carpeta>/<prefijo>-XX.jpg — si no existe,
 // cae automáticamente en la imagen de respaldo de arriba.
 
+// numImg reasignado el 10-jul-2026 para que cada producto use una foto
+// que sí corresponde visualmente a su categoría real (tenis/casual/sandalia).
+// Los que no alcanzaron foto real usan números altos (90+, 110+) que no
+// existen en la carpeta, así que caen automáticamente en la imagen de respaldo.
 const productosCalzado = [
     ['Nike Air Max', 250000, 'tenis', true, 1],
     ['Adidas Runner', 230000, 'tenis', true, 2],
     ['New Balance 574', 280000, 'tenis', true, 3],
     ['Puma RS-X', 260000, 'tenis', true, 4],
     ['Reebok Classic', 210000, 'tenis', true, 5],
-    ['Nike Revolution', 190000, 'tenis', false, 6],
+    ['Nike Revolution', 190000, 'tenis', true, 6],
     ['Adidas Superstar', 240000, 'tenis', true, 7],
     ['Converse Chuck Taylor', 175000, 'tenis', true, 8],
     ['Vans Old Skool', 200000, 'tenis', true, 9],
     ['Nike Air Force 1', 290000, 'tenis', true, 10],
-    ['Zapato Oxford Clásico', 220000, 'casual', true, 11],
-    ['Mocasín Cuero Café', 195000, 'casual', true, 12],
-    ['Zapato Náutico Beige', 180000, 'casual', true, 13],
-    ['Botín Casual Negro', 235000, 'casual', true, 14],
-    ['Zapato Derby Formal', 245000, 'casual', false, 15],
-    ['Mocasín Tejido Gris', 205000, 'casual', true, 16],
-    ['Zapato Loafer Café', 215000, 'casual', true, 17],
-    ['Botín Chelsea Negro', 260000, 'casual', true, 18],
-    ['Zapato Casual Cuero Miel', 225000, 'casual', true, 19],
-    ['Mocasín Elegante Azul', 210000, 'casual', true, 20],
-    ['Sandalia Cuero Tostado', 130000, 'sandalia', true, 21],
-    ['Sandalia Deportiva Negra', 110000, 'sandalia', true, 22],
-    ['Sandalia Plana Café', 95000, 'sandalia', true, 23],
-    ['Chancla Confort Gris', 80000, 'sandalia', true, 24],
-    ['Sandalia Trekking Verde', 140000, 'sandalia', false, 25],
-    ['Sandalia Elegante Beige', 120000, 'sandalia', true, 26],
-    ['Chancla Slide Negra', 85000, 'sandalia', true, 27],
-    ['Sandalia Tiras Cuero', 125000, 'sandalia', true, 28],
-    ['Sandalia Playa Azul', 90000, 'sandalia', true, 29],
-    ['Sandalia Urbana Café', 115000, 'sandalia', true, 30],
-    ['Nike Air Zoom', 270000, 'tenis', true, 31],
-    ['Adidas Ultraboost', 310000, 'tenis', true, 32],
-    ['Puma Suede Classic', 195000, 'tenis', true, 33],
-    ['Reebok Nano', 245000, 'tenis', false, 34],
-    ['Nike Air Max 90', 275000, 'tenis', true, 35],
-    ['Zapato Monk Strap', 230000, 'casual', true, 36],
-    ['Mocasín Penny Loafer', 200000, 'casual', true, 37],
-    ['Zapato Casual Gamuza', 210000, 'casual', true, 38],
-    ['Botín Cuero Marrón', 250000, 'casual', true, 39],
-    ['Zapato Brogue Negro', 240000, 'casual', false, 40],
-    ['Sandalia Romana Cuero', 135000, 'sandalia', true, 41],
-    ['Chancla Deportiva Azul', 95000, 'sandalia', true, 42],
-    ['Sandalia Trenzada Beige', 125000, 'sandalia', true, 43],
-    ['Sandalia Cuña Café', 145000, 'sandalia', true, 44],
-    ['Chancla Comfort Negra', 88000, 'sandalia', true, 45],
-    ['Tenis Casual Blanco', 185000, 'tenis', true, 46],
-    ['Zapatilla Urbana Gris', 220000, 'tenis', true, 47],
-    ['Zapato Slip-On Café', 190000, 'casual', true, 48],
-    ['Sandalia Sport Negra', 100000, 'sandalia', false, 49],
-    ['Botín Casual Café', 255000, 'casual', true, 50]
+    ['Sandalia Cuero Tostado', 130000, 'sandalia', true, 12],
+    ['Sandalia Deportiva Negra', 110000, 'sandalia', true, 13],
+    ['Sandalia Plana Café', 95000, 'sandalia', true, 14],
+    ['Chancla Confort Gris', 80000, 'sandalia', true, 15],
+    ['Sandalia Negra Doble Hebilla', 220000, 'sandalia', true, 16],
+    ['Sandalia Blanca Acolchada', 195000, 'sandalia', true, 17],
+    ['Nike Air Zoom', 270000, 'tenis', true, 18],
+    ['Adidas Ultraboost', 310000, 'tenis', true, 19],
+    ['Puma Suede Classic', 195000, 'tenis', true, 20],
+    ['Reebok Nano', 245000, 'tenis', true, 21],
+    ['Nike Air Max 90', 275000, 'tenis', true, 22],
+    ['Tenis Casual Blanco', 185000, 'tenis', true, 23],
+    ['Zapatilla Urbana Gris', 220000, 'tenis', true, 24],
+    ['Zapato Náutico Beige', 180000, 'casual', true, 25]
 ];
 
 const productosRelojes = [
-    ['Reloj Casio Clásico', 180000, 'hombre', true, 1],
-    ['Reloj Fossil Cuero Café', 320000, 'hombre', true, 2],
-    ['Reloj Citizen Acero', 410000, 'hombre', true, 3],
-    ['Reloj Seiko Automático', 450000, 'hombre', false, 4],
-    ['Reloj Tommy Hilfiger Negro', 350000, 'hombre', true, 5],
-    ['Reloj Diesel Cronógrafo', 380000, 'hombre', true, 6],
-    ['Reloj Armani Exchange', 360000, 'hombre', true, 7],
-    ['Reloj Guess Hombre', 300000, 'hombre', true, 8],
-    ['Reloj Lacoste Deportivo', 330000, 'hombre', true, 9],
-    ['Reloj Casio Edifice', 250000, 'hombre', true, 10],
-    ['Reloj Fossil Elegante', 320000, 'mujer', true, 11],
-    ['Reloj Michael Kors Dorado', 400000, 'mujer', true, 12],
-    ['Reloj Guess Mujer Rosa', 290000, 'mujer', true, 13],
-    ['Reloj Casio Sheen', 220000, 'mujer', false, 14],
-    ['Reloj Anne Klein', 270000, 'mujer', true, 15],
-    ['Reloj Kate Spade', 350000, 'mujer', true, 16],
-    ['Reloj Daniel Wellington', 380000, 'mujer', true, 17],
-    ['Reloj Tommy Hilfiger Mujer', 340000, 'mujer', true, 18],
-    ['Reloj Swatch Colorido', 190000, 'mujer', true, 19],
-    ['Reloj Lacoste Mujer', 310000, 'mujer', true, 20],
-    ['Reloj Deportivo Pro', 250000, 'deportivo', true, 21],
-    ['Reloj Casio G-Shock', 280000, 'deportivo', true, 22],
-    ['Reloj Garmin Fitness', 450000, 'deportivo', true, 23],
-    ['Reloj Suunto Aventura', 420000, 'deportivo', false, 24],
-    ['Reloj Casio Digital Deportivo', 150000, 'deportivo', true, 25],
-    ['Reloj Timex Ironman', 230000, 'deportivo', true, 26],
-    ['Reloj Polar Running', 390000, 'deportivo', true, 27],
-    ['Reloj Nike Sport', 200000, 'deportivo', true, 28],
-    ['Reloj Adidas Digital', 175000, 'deportivo', true, 29],
-    ['Reloj Under Armour', 260000, 'deportivo', true, 30],
-    ['Reloj Casio Vintage', 165000, 'hombre', true, 31],
-    ['Reloj Fossil Grand', 340000, 'hombre', true, 32],
-    ['Reloj Emporio Armani', 420000, 'hombre', true, 33],
-    ['Reloj Casio Retro', 155000, 'hombre', false, 34],
-    ['Reloj Diesel Mega Chief', 370000, 'hombre', true, 35],
-    ['Reloj Michael Kors Runway', 390000, 'mujer', true, 36],
-    ['Reloj Casio Baby-G', 210000, 'mujer', true, 37],
-    ['Reloj Fossil Rose Gold', 330000, 'mujer', true, 38],
-    ['Reloj Kate Spade Metro', 360000, 'mujer', false, 39],
-    ['Reloj Anne Klein Cristal', 280000, 'mujer', true, 40],
-    ['Reloj Casio Pro Trek', 300000, 'deportivo', true, 41],
-    ['Reloj Suunto Core', 410000, 'deportivo', true, 42],
-    ['Reloj Garmin Vivoactive', 460000, 'deportivo', true, 43],
-    ['Reloj Timex Expedition', 240000, 'deportivo', true, 44],
-    ['Reloj Polar Vantage', 430000, 'deportivo', false, 45],
-    ['Reloj Casio Collection', 175000, 'hombre', true, 46],
-    ['Reloj Guess Connect', 320000, 'mujer', true, 47],
-    ['Reloj Nike Triax', 210000, 'deportivo', true, 48],
-    ['Reloj Lacoste Classic', 290000, 'hombre', true, 49],
-    ['Reloj Swatch Sport', 180000, 'deportivo', true, 50]
+    ['Reloj Clásico Hombre 01', 180000, 'hombre', true, 1],
+    ['Reloj Clásico Hombre 02', 320000, 'hombre', true, 2],
+    ['Reloj Clásico Hombre 03', 410000, 'hombre', true, 3],
+    ['Reloj Clásico Hombre 04', 450000, 'hombre', true, 4],
+    ['Reloj Clásico Hombre 05', 350000, 'hombre', true, 5],
+    ['Reloj Clásico Hombre 06', 380000, 'hombre', true, 6],
+    ['Reloj Clásico Hombre 07', 360000, 'hombre', true, 7],
+    ['Reloj Clásico Hombre 08', 300000, 'hombre', true, 8],
+    ['Reloj Clásico Hombre 09', 330000, 'hombre', true, 9],
+    ['Reloj Clásico Hombre 10', 250000, 'hombre', true, 10],
+    ['Reloj Elegante Mujer 01', 320000, 'mujer', true, 11],
+    ['Reloj Elegante Mujer 02', 400000, 'mujer', true, 12],
+    ['Reloj Elegante Mujer 03', 290000, 'mujer', true, 13],
+    ['Reloj Elegante Mujer 04', 220000, 'mujer', true, 14],
+    ['Reloj Elegante Mujer 05', 270000, 'mujer', true, 15],
+    ['Reloj Elegante Mujer 06', 350000, 'mujer', true, 16],
+    ['Reloj Elegante Mujer 07', 380000, 'mujer', true, 17],
+    ['Reloj Elegante Mujer 08', 340000, 'mujer', true, 18]
 ];
 
 const productosLociones = [
     ['One Million Paco Rabanne', 120000, 'masculina', true, 1],
     ['Bleu de Chanel', 240000, 'masculina', true, 2],
     ['Sauvage Dior', 250000, 'masculina', true, 3],
-    ['Acqua di Gio Armani', 200000, 'masculina', false, 4],
+    ['Acqua di Gio Armani', 200000, 'masculina', true, 4],
     ['Polo Blue Ralph Lauren', 180000, 'masculina', true, 5],
     ['Eros Versace', 150000, 'masculina', true, 6],
     ['Invictus Paco Rabanne', 130000, 'masculina', true, 7],
@@ -133,7 +103,7 @@ const productosLociones = [
     ['Coco Mademoiselle Chanel', 150000, 'femenina', true, 11],
     ['Good Girl Carolina Herrera', 210000, 'femenina', true, 12],
     ['La Vie Est Belle Lancôme', 190000, 'femenina', true, 13],
-    ['Miss Dior', 230000, 'femenina', false, 14],
+    ['Miss Dior', 230000, 'femenina', true, 14],
     ['Black Opium YSL', 200000, 'femenina', true, 15],
     ['Flowerbomb Viktor & Rolf', 240000, 'femenina', true, 16],
     ['Idôle Lancôme', 195000, 'femenina', true, 17],
@@ -143,7 +113,7 @@ const productosLociones = [
     ['CK One Calvin Klein', 95000, 'unisex', true, 21],
     ['Molecule 01 Escentric', 175000, 'unisex', true, 22],
     ['Le Labo Santal 33', 350000, 'unisex', true, 23],
-    ['Jo Malone Lime Basil', 300000, 'unisex', false, 24],
+    ['Jo Malone Lime Basil', 300000, 'unisex', true, 24],
     ['Gucci Bloom', 210000, 'unisex', true, 25],
     ['Bvlgari Omnia', 185000, 'unisex', true, 26],
     ['Versace Eros Unisex', 165000, 'unisex', true, 27],
@@ -153,18 +123,18 @@ const productosLociones = [
     ['Dior Homme', 260000, 'masculina', true, 31],
     ['Chanel Allure Homme', 270000, 'masculina', true, 32],
     ['Versace Pour Homme', 190000, 'masculina', true, 33],
-    ['Hugo Boss Bottled Night', 175000, 'masculina', false, 34],
+    ['Hugo Boss Bottled Night', 175000, 'masculina', true, 34],
     ['Giorgio Armani Code', 230000, 'masculina', true, 35],
     ['Chanel No. 5', 280000, 'femenina', true, 36],
     ["Dior J'adore", 260000, 'femenina', true, 37],
     ['Lancôme Trésor', 195000, 'femenina', true, 38],
-    ['Carolina Herrera 212', 165000, 'femenina', false, 39],
+    ['Carolina Herrera 212', 165000, 'femenina', true, 39],
     ['Versace Bright Crystal', 175000, 'femenina', true, 40],
     ['Calvin Klein Eternity Unisex', 155000, 'unisex', true, 41],
     ['Byredo Gypsy Water', 390000, 'unisex', true, 42],
     ['Maison Margiela Replica', 340000, 'unisex', true, 43],
     ['Comme des Garçons Unisex', 300000, 'unisex', true, 44],
-    ['Tom Ford Tobacco Vanille', 420000, 'unisex', false, 45],
+    ['Tom Ford Tobacco Vanille', 420000, 'unisex', true, 45],
     ['Prada Luna Rossa', 245000, 'masculina', true, 46],
     ['Burberry Her', 210000, 'femenina', true, 47],
     ['Yves Saint Laurent Libre', 235000, 'femenina', true, 48],
@@ -173,9 +143,9 @@ const productosLociones = [
 ];
 
 // ===== RENDERIZADO DINÁMICO DE TARJETAS DE PRODUCTO =====
-function crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo) {
+function crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo, idx) {
     const precioFormateado = '$' + precio.toLocaleString('es-CO');
-    const imgPrincipal = `images/catalogo/${tipo}/${tipo}-${String(numImg).padStart(2, '0')}.jpg`;
+    const imgPrincipal = `${CARPETA_IMG[tipo]}/${PREFIJO_IMG[tipo]}-${String(numImg).padStart(2, '0')}.jpg`;
     const imgRespaldo = IMAGEN_RESPALDO[tipo];
     const mensaje = encodeURIComponent(`Hola 👋 Me interesa *${nombre}* ¿Está disponible?`);
 
@@ -185,9 +155,9 @@ function crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo) 
             <div class="producto-info">
                 <h3>${nombre}</h3>
                 <span class="${disponible ? 'disponible' : 'agotado-badge'}">${disponible ? 'Disponible' : 'Agotado'}</span>
-                <p>${precioFormateado}</p>
+                <p class="producto-precio-centrado">${precioFormateado}</p>
                 <div class="producto-btns">
-                    <a href="producto.html">Ver detalles</a>
+                    <a href="producto.html?tipo=${tipo}&idx=${idx}">Ver detalles</a>
                     <a class="btn-wa-card" href="https://wa.me/${WHATSAPP_NUMBER}?text=${mensaje}" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp
                     </a>
@@ -205,11 +175,70 @@ function renderizarCatalogo() {
     if (!datos) return;
 
     grid.innerHTML = datos
-        .map(([nombre, precio, categoria, disponible, numImg]) => crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo))
+        .map(([nombre, precio, categoria, disponible, numImg], idx) => crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo, idx))
         .join('');
 }
 
 renderizarCatalogo();
+
+// ===== PÁGINA DE DETALLE DE PRODUCTO (producto.html) =====
+// Lee ?tipo=calzado&idx=3 de la URL y llena la página con los datos reales
+// del producto que el cliente clicó, sea calzado, reloj o loción.
+function renderizarProductoDetalle() {
+    const cont = document.getElementById('producto-detalle-dynamic');
+    if (!cont) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const tipo = params.get('tipo') || 'calzado';
+    const idx = parseInt(params.get('idx'), 10);
+
+    const datos = { calzado: productosCalzado, relojes: productosRelojes, lociones: productosLociones }[tipo];
+    if (!datos || isNaN(idx) || !datos[idx]) return;
+
+    const [nombre, precio, categoria, disponible, numImg] = datos[idx];
+    const precioFormateado = '$' + precio.toLocaleString('es-CO');
+    const imgPrincipal = `${CARPETA_IMG[tipo]}/${PREFIJO_IMG[tipo]}-${String(numImg).padStart(2, '0')}.jpg`;
+    const imgRespaldo = IMAGEN_RESPALDO[tipo];
+    const mensaje = encodeURIComponent(`Hola 👋 Me interesa *${nombre}* ¿Está disponible?`);
+
+    const imgEl = document.getElementById('producto-img');
+    if (imgEl) {
+        imgEl.src = imgPrincipal;
+        imgEl.alt = nombre;
+        imgEl.onerror = function () { this.onerror = null; this.src = imgRespaldo; };
+    }
+
+    const nombreEl = document.getElementById('producto-nombre');
+    if (nombreEl) nombreEl.textContent = nombre;
+
+    const precioEl = document.getElementById('producto-precio');
+    if (precioEl) precioEl.textContent = precioFormateado;
+
+    const badgeEl = document.getElementById('producto-disponibilidad');
+    if (badgeEl) {
+        badgeEl.textContent = disponible ? 'Disponible' : 'Agotado';
+        badgeEl.className = disponible ? 'disponible' : 'agotado-badge';
+    }
+
+    const waBtn = document.getElementById('producto-whatsapp-btn');
+    if (waBtn) waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensaje}`;
+
+    // Descripción: si es reloj, usa el texto genérico de su categoría (hombre/mujer/deportivo)
+    const descEl = document.getElementById('producto-descripcion');
+    if (descEl && tipo === 'relojes') {
+        descEl.textContent = DESCRIPCION_RELOJ[categoria] || DESCRIPCION_RELOJ.hombre;
+    }
+
+    // Las tallas solo aplican a calzado; se ocultan para relojes y lociones
+    const tallasSection = document.getElementById('tallas-section');
+    if (tallasSection) {
+        tallasSection.style.display = (tipo === 'calzado') ? '' : 'none';
+    }
+
+    document.title = `${nombre} | Veltrozans`;
+}
+
+renderizarProductoDetalle();
 
 // ===== MENÚ HAMBURGUESA =====
 const menuBtn = document.getElementById("menu-btn");
