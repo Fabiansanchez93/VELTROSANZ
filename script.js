@@ -42,30 +42,30 @@ const DESCRIPCION_RELOJ = {
 // Los que no alcanzaron foto real usan números altos (90+, 110+) que no
 // existen en la carpeta, así que caen automáticamente en la imagen de respaldo.
 const productosCalzado = [
-    ['New Balance 530', 250000, 'tenis', true, 1],
-    ['Nike Air Max Plus', 230000, 'tenis', true, 2],
-    ['Zapatilla Negra Estampado Dorado', 280000, 'tenis', true, 3],
-    ['Zapatilla Calvin Klein', 260000, 'tenis', true, 4],
-    ['New Balance 9060', 210000, 'tenis', true, 5],
-    ['Adidas Duramo', 190000, 'tenis', true, 6],
-    ['Adidas Response', 240000, 'tenis', true, 7],
-    ['Tenis Retro Azul y Blanco', 175000, 'tenis', true, 8],
-    ['Le Coq Sportif Runner', 200000, 'tenis', true, 9],
-    ['Puma Court Blanco', 290000, 'tenis', true, 10],
+    ['New Balance 530', 150000, 'tenis', true, 1],
+    ['Nike Air Max Plus', 330000, 'tenis', true, 2],
+    ['Zapatilla Negra Estampado Dorado', 180000, 'tenis', true, 3],
+    ['Zapatilla Calvin Klein', 160000, 'tenis', true, 4],
+    ['New Balance 9060', 110000, 'tenis', true, 5],
+    ['Adidas Duramo', 140000, 'tenis', true, 6],
+    ['Adidas Response', 140000, 'tenis', true, 7],
+    ['Tenis Retro Azul y Blanco', 155000, 'tenis', true, 8],
+    ['Le Coq Sportif Runner', 100000, 'tenis', true, 9],
+    ['Puma Court Blanco', 240000, 'tenis', true, 10],
     ['Sandalia Café Cuadros', 130000, 'sandalia', true, 12],
     ['Sandalia Negra Cuadros', 110000, 'sandalia', true, 13],
     ['Sandalia Beige Plataforma', 95000, 'sandalia', true, 14],
     ['Sandalia Blanca Doble Correa', 80000, 'sandalia', true, 15],
-    ['Sandalia Negra Hebilla Dorada', 220000, 'sandalia', true, 16],
+    ['Sandalia Negra Hebilla Dorada', 120000, 'sandalia', true, 16],
     ['Sandalia Blanca Acolchada', 195000, 'sandalia', true, 17],
-    ['Adidas Response Negro', 270000, 'tenis', true, 18],
-    ['Adidas Retro Runner', 310000, 'tenis', true, 19],
+    ['Adidas Response Negro', 170000, 'tenis', true, 18],
+    ['Adidas Retro Runner', 110000, 'tenis', true, 19],
     ['Nike Air Max 95', 195000, 'tenis', true, 20],
-    ['Adidas Samba', 245000, 'tenis', true, 21],
+    ['Adidas Samba', 145000, 'tenis', true, 21],
     ['Tenis Blanco Minimalista', 275000, 'tenis', true, 22],
     ['Reebok Club C', 185000, 'tenis', true, 23],
-    ['New Balance 574', 220000, 'tenis', true, 24],
-    ['Nike Air Force 1', 180000, 'casual', true, 25]
+    ['New Balance 574', 120000, 'tenis', true, 24],
+    ['Nike Air Force 1', 140000, 'casual', true, 25]
 ];
 
 const productosRelojes = [
