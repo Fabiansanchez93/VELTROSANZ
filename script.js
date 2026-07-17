@@ -160,11 +160,12 @@ const productosLociones = [
 // ===== MENSAJES DE WHATSAPP (según disponibilidad) =====
 // Disponible -> pregunta normal de compra.
 // Agotado    -> pide que le avisen cuando vuelva a llegar.
-function mensajeWhatsApp(nombre, disponible, color) {
+function mensajeWhatsApp(nombre, disponible, color, talla) {
     let texto = disponible
         ? `Hola 👋 Me interesa *${nombre}*`
         : `Hola 👋 ¿Me puedes avisar cuando vuelva a estar disponible *${nombre}*?`;
     if (color) texto += ` en color *${color}*`;
+    if (talla) texto += ` en talla *${talla}* (EU)`;
     if (disponible) texto += ` ¿Está disponible?`;
     return encodeURIComponent(texto);
 }
@@ -250,10 +251,13 @@ function renderizarProductoDetalle() {
     // Color seleccionado actual (por defecto, el primero de la lista)
     let colorSeleccionado = tieneColores ? colores[0].nombre : null;
 
-    // Reconstruye el enlace de WhatsApp según disponibilidad + color elegido
+    // Talla seleccionada actual (solo aplica a calzado; empieza sin elegir)
+    let tallaSeleccionada = null;
+
+    // Reconstruye el enlace de WhatsApp según disponibilidad + color + talla elegidos
     function actualizarWhatsApp() {
         if (waBtn) {
-            waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeWhatsApp(nombre, disponible, colorSeleccionado)}`;
+            waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeWhatsApp(nombre, disponible, colorSeleccionado, tallaSeleccionada)}`;
         }
     }
 
@@ -334,6 +338,19 @@ function renderizarProductoDetalle() {
     const tallasSection = document.getElementById('tallas-section');
     if (tallasSection) {
         tallasSection.style.display = (tipo === 'calzado') ? '' : 'none';
+
+        // Al elegir una talla: la marca visualmente, la guarda y la mete al mensaje de WhatsApp
+        if (tipo === 'calzado') {
+            const tallaBtns = tallasSection.querySelectorAll('.talla-btn');
+            tallaBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    tallaBtns.forEach(b => b.classList.remove('activa'));
+                    this.classList.add('activa');
+                    tallaSeleccionada = this.textContent.trim();
+                    actualizarWhatsApp();
+                });
+            });
+        }
     }
 
     // Deja el enlace de WhatsApp listo (con color por defecto si aplica)
@@ -464,15 +481,8 @@ if (backToTopBtn) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
-const tallasDetalle = document.querySelectorAll('.producto-detalle .talla-btn');
-if (tallasDetalle.length > 0) {
-    tallasDetalle.forEach(btn => {
-        btn.addEventListener('click', function() {
-            tallasDetalle.forEach(b => b.classList.remove('activa'));
-            this.classList.add('activa');
-        });
-    });
-}
+// (La selección de talla ahora se maneja dentro de renderizarProductoDetalle,
+//  para que la talla elegida entre al mensaje de WhatsApp.)
 
 // ===== FILTROS Y BÚSQUEDA DE CATÁLOGO =====
 function filtrar(btn, categoria) {
