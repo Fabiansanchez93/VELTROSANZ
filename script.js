@@ -88,7 +88,7 @@ const productosCalzado = [
     ['Tenis Rojo Gamuza', 160000, 'tenis', true, 26],
     ['Tenis Blanco Detalle Verde', 150000, 'tenis', true, 27],
     ['Tenis Blanco Pastel', 155000, 'tenis', true, 28],
-    ['Tenis Blanco y Café', 150000, 'tenis', true, 29],
+    ['Tenis Blanco y Café', 155000, 'tenis', true, 29],
 
     // Nº 30 viene en dos colores: Blanco (calzado-30) y Morado (calzado-30-morado)
     ['Tenis Multicolor', 180000, 'tenis', true, 30, [
