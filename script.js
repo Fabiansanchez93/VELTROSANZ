@@ -144,17 +144,21 @@ const productosCalzado = [
     ['Tenis Adidas', 145000, 'tenis', true, 55],
 
     ['Tenis Nike Classic', 150000, 'tenis', true, 56, [
-    { nombre: 'Blanco-Gris ', hex: '#f1eae8', img: 'images/imagenes calzado/calzado-56.jpg' },
-    { nombre: 'Blanco-estrellas', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-56-estrellas.jpg' },
-    { nombre: 'Blanco-Negro', hex: '#130f0f', img: 'images/imagenes calzado/calzado-56-blanco negro.jpg' }
+        { nombre: 'Blanco-Gris ', hex: '#bebab9dc', img: 'images/imagenes calzado/calzado-56.jpg' },
+        { nombre: 'Blanco-estrellas', hex: '#bebab9dc', img: 'images/imagenes calzado/calzado-56-estrellas.jpg' },
+        { nombre: 'Blanco-Negro', hex: '#130f0f', img: 'images/imagenes calzado/calzado-56-blanco negro.jpg' }
+    ]],
+
+    // Nº 60 viene en cuatro colores: Crema (calzado-60-negro), (calzado-60-blanconegro), (calzado-60-beigeclaro), (calzado-60-beige)
+    ['Tenis Retro', 150000, 'tenis', true, 60, [
+    { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-60-negro.jpg' },
+    { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-60-negroblanco.jpg' },
+    { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-60-beigeclaro.jpg' },
+    { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-60-beige.jpg' }
 ]],
 
-    ['Sandalia Negra Cuadros', 150000, 'sandalia', true, 57],
-    ['Sandalia Beige Plataforma', 150000, 'sandalia', true, 58],
-    ['Sandalia Blanca Doble Correa', 150000, 'sandalia', true, 59],
-    ['Sandalia Negra Hebilla Dorada', 150000, 'sandalia', true, 60],
-    ['Sandalia Blanca Acolchada', 150000, 'sandalia', true, 61],
-    ['Adidas Response Negro', 150000, 'tenis', true, 62],
+    ['Adidas-Equip', 150000, 'sandalia', true, 61],
+    ['Adidas Color verde', 150000, 'tenis', true, 62],
     ['Adidas Retro Runner', 150000, 'tenis', true, 63],
     ['Nike Air Max 95', 150000, 'tenis', true, 64],
     ['Adidas Samba', 145000, 'tenis', true, 65],
