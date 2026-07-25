@@ -131,6 +131,16 @@ const productosCalzado = [
 
 ];
 
+// Nº 50 viene en tres colores: vinotinto (calzado-50)  rosa (calzado-50-rosa) y beige (calzado-50-beige)
+['Tenis Retro', 150000, 'tenis', true, 32, [
+    { nombre: 'Vinotinto', hex: '#9e2305', img: 'images/imagenes calzado/calzado-50.jpg' },
+    { nombre: 'Rosa', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-50-rosa.jpg' },
+    { nombre: 'Beige', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-50-beige.jpg' }
+
+]],
+
+
+
 const productosRelojes = [
     ['Reloj Clásico Hombre 01', 180000, 'hombre', true, 1],
     ['Reloj Clásico Hombre 02', 180000, 'hombre', true, 2],
