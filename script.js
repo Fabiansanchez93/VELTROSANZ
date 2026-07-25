@@ -171,12 +171,12 @@ const productosCalzado = [
 
     ['Nike Blanco-Gris', 145000, 'tenis', true, 68],
 
-//N° 69 vien con 3 estilos de color : negro, naranja/negro, azul
-['Nike 1080', 145000, 'tenis', true, 69, [
-    { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-69-negro.jpg' },
-    { nombre: 'Naranja/Negro', hex: '#e64f09', img: 'images/imagenes calzado/calzado-69-naranja.jpg' },
-    { nombre: 'Azul', hex: '#0000ff', img: 'images/imagenes calzado/calzado-69.jpg' }
-]],
+    //N° 69 vien con 3 estilos de color : negro, naranja/negro, azul
+    ['Nike 1080', 145000, 'tenis', true, 69, [
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-69-negro.jpg' },
+        { nombre: 'Naranja/Negro', hex: '#e64f09', img: 'images/imagenes calzado/calzado-69-naranja.jpg' },
+        { nombre: 'Azul', hex: '#0000ff', img: 'images/imagenes calzado/calzado-69.jpg' }
+    ]],
     ['Nike Black', 145000, 'tenis', true, 70],
 
 
@@ -205,14 +205,20 @@ const productosRelojes = [
     ['Reloj Elegante Mujer 05', 135000, 'mujer', true, 15],
     ['Reloj Digital Naviforce Mujer 03', 125000, 'mujer', true, 16],
     ['Reloj Digital Naviforce Mujer 04', 125000, 'mujer', true, 17],
-    ['Reloj Digital Naviforce Mujer 05', 125000, 'mujer', true, 18]
+    ['Reloj Digital Naviforce Mujer 05', 125000, 'mujer', true, 18],
+
+    // N° 35 viene en 4 colores: Rojo, Azul, Negro y Verde.
+    // Nº 35 viene en 4 colores: Rojo, Azul, Negro y Verde.
+    ['Reloj JoeFox', 120000, 'Hombre', true, 35, [
+        { nombre: 'Blanco-Gris', hex: '#bebab9dc', img: 'images/imagenes relojes/reloj-35.jpg' },
+        { nombre: 'Verde', hex: '#08f514dc', img: 'images/imagenes relojes/reloj-35-verde.jpg' },
+        { nombre: 'Azul', hex: '#43b375', img: 'images/imagenes relojes/reloj-35-azul.jpg' },
+        { nombre: 'Azul Oscuro', hex: '#2310ca', img: 'images/imagenes relojes/reloj-35-azuloscuro.jpg' }
+    ]],
 ];
 
 // ===== CORREAS =====
-// Por ahora solo hay una foto: images/imagenes correas/correa-01.jpg
 // (renombra correa-hombre-01.jpg a correa-01.jpg).
-// Para agregar más: sube correa-02.jpg, correa-03.jpg... y añade una línea
-// aquí con ese número al final. Ajusta los precios a los reales.
 const productosCorreas = [
     ['Correa de Cuero Hombre Café', 65000, 'hombre', true, 1],
 ];
