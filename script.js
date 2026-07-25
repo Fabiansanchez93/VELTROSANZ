@@ -89,7 +89,6 @@ const productosCalzado = [
     ['Adidas Response Negro', 150000, 'tenis', true, 18],
     ['Adidas Retro Runner', 150000, 'tenis', true, 19],
     ['Nike Air Max 95', 150000, 'tenis', true, 20],
-    ['Adidas Samba', 145000, 'tenis', true, 21],
     ['Tenis Blanco Minimalista', 170000, 'tenis', true, 22],
     ['Reebok Club C', 150000, 'tenis', true, 23],
     ['New Balance 574', 160000, 'tenis', true, 24],
@@ -149,20 +148,36 @@ const productosCalzado = [
         { nombre: 'Blanco-Negro', hex: '#130f0f', img: 'images/imagenes calzado/calzado-56-blanco negro.jpg' }
     ]],
 
-    // Nº 60 viene en cuatro colores: Crema (calzado-60-negro), (calzado-60-blanconegro), (calzado-60-beigeclaro), (calzado-60-beige)
+    // Nº 60 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
     ['Tenis Retro', 150000, 'tenis', true, 60, [
-    { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-60-negro.jpg' },
-    { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-60-negroblanco.jpg' },
-    { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-60-beigeclaro.jpg' },
-    { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-60-beige.jpg' }
-]],
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-60-negro.jpg' },
+        { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-60-negroblanco.jpg' },
+        { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-60-beigeclaro.jpg' },
+        { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-60-beige.jpg' }
+    ]],
 
-    ['Adidas-Equip', 150000, 'sandalia', true, 61],
+    ['Adidas-Equip', 150000, 'tenis', true, 61],
     ['Adidas Color verde', 150000, 'tenis', true, 62],
-    ['Adidas Retro Runner', 150000, 'tenis', true, 63],
-    ['Nike Air Max 95', 150000, 'tenis', true, 64],
-    ['Adidas Samba', 145000, 'tenis', true, 65],
+    ['Adidas Campus', 150000, 'tenis', true, 63],
+    ['New Balance 9060', 160000, 'tenis', true, 64],
+    ['Calvin Klein', 145000, 'tenis', true, 65],
+    ['Gucci', 145000, 'tenis', true, 66],
+    ['Adidas Air Force', 145000, 'tenis', true, 67],
+
+    ['Nike Blanco-Gris', 145000, 'tenis', true, 68],
+
+//N° 69 vien con 3 estilos de color : negro, naranja/negro, azul
+['Nike 1080', 145000, 'tenis', true, 69, [
+    { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-69-negro.jpg' },
+    { nombre: 'Naranja/Negro', hex: '#e64f09', img: 'images/imagenes calzado/calzado-69-naranja.jpg' },
+    { nombre: 'Azul', hex: '#0000ff', img: 'images/imagenes calzado/calzado-69.jpg' }
+]],
+    ['Nike Black', 145000, 'tenis', true, 70],
+
+
 ];
+
+
 
 
 
