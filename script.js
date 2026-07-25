@@ -129,32 +129,34 @@ const productosCalzado = [
     ['Tenis Blanco y Gris', 150000, 'tenis', true, 44],
     ['Tenis Vinotinto y Blanco', 165000, 'tenis', true, 45],
 
-    ['Lacoste Caballero', 160000, 'tenis', true, 46],
-    ['Nike P6000', 150000, 'tenis', true, 47],
+    ['Lacoste Verde', 160000, 'tenis', true, 46],
+    ['Nike P6000 Rosa', 150000, 'tenis', true, 47],
     ['Zapatilla Negra- blanco', 165000, 'tenis', true, 48],
-    ['Zapatilla Nike', 160000, 'tenis', true, 49],
+    ['Zapatilla Nike Blanco Negro', 160000, 'tenis', true, 49],
     // Nº 50 viene en tres colores: vinotinto (calzado-50)  rosa (calzado-50-rosa) y beige (calzado-50-beige)
-    ['Tenis Retro', 150000, 'tenis', true, 50, [
-        { nombre: 'Nike Vinotinto', hex: '#9e2305', img: 'images/imagenes calzado/calzado-50.jpg' },
-        { nombre: 'Nike Rosa', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-50-rosa.jpg' },
-        { nombre: 'Nike Beige', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-50-beige.jpg' },
+    ['Tenis Nike Classic', 150000, 'tenis', true, 50, [
+        { nombre: ' Vinotinto', hex: '#9e2305', img: 'images/imagenes calzado/calzado-50.jpg' },
+        { nombre: ' Rosa', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-50-rosa.jpg' },
+        { nombre: ' Beige', hex: '#a8a1a1', img: 'images/imagenes calzado/calzado-50-beige.jpg' },
+        ['Ralph Lauren', 160000, 'tenis', true, 52],
+        ['Zapatilla Armani', 165000, 'tenis', true, 53],
+        ['Tenis Adidas', 165000, 'tenis', true, 54],
+        ['Tenis Adidas', 145000, 'tenis', true, 55],
+        // Nº 56 viene en tres colores: vinotinto (calzado-56)  rosa (calzado-56-estrellas)
+        ['Tenis Nike Classic', 150000, 'tenis', true, 50, [
+            { nombre: ' Blanco estrellas', hex: '#f1eae8', img: 'images/imagenes calzado/calzado-56.jpg' },
+            { nombre: ' Blanco', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-56.jpg' },
 
-    ]], ['Adidas Duramo', 165000, 'tenis', true, 51],
-    ['Adidas Response', 160000, 'tenis', true, 52],
-    ['Tenis Retro Azul y Blanco', 165000, 'tenis', true, 53],
-    ['Le Coq Sportif Runner', 165000, 'tenis', true, 54],
-    ['Puma Court Blanco', 145000, 'tenis', true, 55],
-    ['Sandalia Café Cuadros', 150000, 'sandalia', true, 56],
-    ['Sandalia Negra Cuadros', 150000, 'sandalia', true, 57],
-    ['Sandalia Beige Plataforma', 150000, 'sandalia', true, 58],
-    ['Sandalia Blanca Doble Correa', 150000, 'sandalia', true, 59],
-    ['Sandalia Negra Hebilla Dorada', 150000, 'sandalia', true, 60],
-    ['Sandalia Blanca Acolchada', 150000, 'sandalia', true, 61],
-    ['Adidas Response Negro', 150000, 'tenis', true, 62],
-    ['Adidas Retro Runner', 150000, 'tenis', true, 63],
-    ['Nike Air Max 95', 150000, 'tenis', true, 64],
-    ['Adidas Samba', 145000, 'tenis', true, 65],
-];
+            ['Sandalia Negra Cuadros', 150000, 'sandalia', true, 57],
+            ['Sandalia Beige Plataforma', 150000, 'sandalia', true, 58],
+            ['Sandalia Blanca Doble Correa', 150000, 'sandalia', true, 59],
+            ['Sandalia Negra Hebilla Dorada', 150000, 'sandalia', true, 60],
+            ['Sandalia Blanca Acolchada', 150000, 'sandalia', true, 61],
+            ['Adidas Response Negro', 150000, 'tenis', true, 62],
+            ['Adidas Retro Runner', 150000, 'tenis', true, 63],
+            ['Nike Air Max 95', 150000, 'tenis', true, 64],
+            ['Adidas Samba', 145000, 'tenis', true, 65],
+        ];
 
 
 
