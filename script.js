@@ -210,10 +210,10 @@ const productosRelojes = [
     // N° 35 viene en 4 colores: Rojo, Azul, Negro y Verde.
     // Nº 35 viene en 4 colores: Rojo, Azul, Negro y Verde.
     ['Reloj JoeFox', 120000, 'Hombre', true, 35, [
-        { nombre: 'Blanco-Gris', hex: '#bebab9dc', img: 'images/imagenes relojes/reloj-35.jpg' },
-        { nombre: 'Verde', hex: '#08f514dc', img: 'images/imagenes relojes/reloj-35-verde.jpg' },
-        { nombre: 'Azul', hex: '#43b375', img: 'images/imagenes relojes/reloj-35-azul.jpg' },
-        { nombre: 'Azul Oscuro', hex: '#2310ca', img: 'images/imagenes relojes/reloj-35-azuloscuro.jpg' }
+        { nombre: 'Rojo', hex: '#f03608dc', img: 'images/imagenes relojes/reloj-35.jpg' },
+        { nombre: 'Verde', hex: '#3b5f3ddc', img: 'images/imagenes relojes/reloj-35-verde.jpg' },
+        { nombre: 'Azul', hex: '#11416e', img: 'images/imagenes relojes/reloj-35-azul.jpg' },
+        { nombre: 'Azul Oscuro', hex: '#161c6e', img: 'images/imagenes relojes/reloj-35-azuloscuro.jpg' }
     ]],
 ];
 
