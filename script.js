@@ -153,12 +153,12 @@ const productosCalzado = [
         { nombre: 'Blanco-Negro', hex: '#130f0f', img: 'images/imagenes calzado/calzado-56-blanco negro.jpg' }
     ]],
 
-    // Nº 60 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
+    // Nº 100 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
     ['Tenis Retro', 150000, 'tenis', true, 100, [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-100-negro.jpg' },
         { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-100-negroblanco.jpg' },
         { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-100-beigeclaro.jpg' },
-        { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-100-beige.jpg' }
+        { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-100.jpg' }
     ]],
 
     ['Adidas-Equip', 150000, 'tenis', true, 61],
