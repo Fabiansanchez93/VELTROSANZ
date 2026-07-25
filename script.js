@@ -72,14 +72,14 @@ const DESCRIPCION_CORREA = {
 const productosCalzado = [
     ['New Balance 550', 150000, 'tenis', true, 1],
     ['Nike Air Max Plus', 145000, 'tenis', true, 2],
-    ['Zapatilla Negra Estampado Dorado', 165000, 'tenis', true, 3],
-    ['Zapatilla Calvin Klein', 160000, 'tenis', true, 4],
+    ['Zapatilla Negra Estampado Dorado', 165000, 'casual', true, 3],
+    ['Zapatilla Calvin Klein', 160000, 'casual', true, 4],
     ['New Balance 9060', 160000, 'tenis', true, 5],
     ['Adidas Duramo', 165000, 'tenis', true, 6],
     ['Adidas Response', 160000, 'tenis', true, 7],
-    ['Tenis Retro Azul y Blanco', 165000, 'tenis', true, 8],
-    ['Le Coq Sportif Runner', 165000, 'tenis', true, 9],
-    ['Puma Court Blanco', 145000, 'tenis', true, 10],
+    ['Tenis Retro Azul y Blanco', 165000, 'casual', true, 8],
+    ['Le Coq Sportif', 165000, 'casual', true, 9],
+    ['Puma Court Blanco', 145000, 'casual', true, 10],
     ['Sandalia Café Cuadros', 150000, 'sandalia', true, 12],
     ['Sandalia Negra Cuadros', 150000, 'sandalia', true, 13],
     ['Sandalia Beige Plataforma', 150000, 'sandalia', true, 14],
@@ -87,11 +87,11 @@ const productosCalzado = [
     ['Sandalia Negra Hebilla Dorada', 150000, 'sandalia', true, 16],
     ['Sandalia Blanca Acolchada', 150000, 'sandalia', true, 17],
     ['Adidas Response Negro', 150000, 'tenis', true, 18],
-    ['Adidas Retro Runner', 150000, 'tenis', true, 19],
+    ['Adidas Retro ', 150000, 'casual', true, 19],
     ['Nike Air Max 95', 150000, 'tenis', true, 20],
-    ['Tenis Blanco Minimalista', 170000, 'tenis', true, 22],
+    ['Tenis Blanco ', 170000, 'casual', true, 22],
     ['Reebok Club C', 150000, 'tenis', true, 23],
-    ['New Balance 574', 160000, 'tenis', true, 24],
+    ['New Balance 574', 160000, 'casual', true, 24],
     ['Nike Air Force 1', 148000, 'casual', true, 25],
 
 
@@ -99,7 +99,12 @@ const productosCalzado = [
     ['Tenis Rojo Gamuza', 160000, 'tenis', true, 26],
     ['Tenis Blanco Detalle Verde', 150000, 'tenis', true, 27],
     ['Tenis Blanco Pastel', 155000, 'tenis', true, 28],
-    ['Tenis Blanco y Café', 150000, 'tenis', true, 29],
+
+    //N° 29 viene en dos colores: pastel (calzado 29) y café (calzado-29-cafe)
+    ['Tenis multicolor', 160000, 'tenis', true, 29, [
+        { nombre: 'Pastel', hex: '#f0f0f0', img: 'images/imagenes calzado/calzado-29-pastel.jpg' },
+        { nombre: 'Café', hex: '#8B4513', img: 'images/imagenes calzado/calzado-29.jpg' }
+    ]],
 
     // Nº 30 viene en dos colores: Blanco (calzado-30) y Morado (calzado-30-morado)
     ['Tenis Multicolor', 180000, 'tenis', true, 30, [
@@ -149,11 +154,11 @@ const productosCalzado = [
     ]],
 
     // Nº 60 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
-    ['Tenis Retro', 150000, 'tenis', true, 60, [
-        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-60-negro.jpg' },
-        { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-60-negroblanco.jpg' },
-        { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-60-beigeclaro.jpg' },
-        { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-60-beige.jpg' }
+    ['Tenis Retro', 150000, 'tenis', true, 100, [
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-100-negro.jpg' },
+        { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-100-negroblanco.jpg' },
+        { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-100-beigeclaro.jpg' },
+        { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-100-beige.jpg' }
     ]],
 
     ['Adidas-Equip', 150000, 'tenis', true, 61],
