@@ -186,7 +186,19 @@ const productosCalzado = [
     { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-77-negro.jpg' }
 ]],
 
+// Nº 78 viene en cuatro colores: azuloscuro, cafe, verde
+    ['Tenis Retro', 150000, 'tenis', true, 78, [
+        { nombre: 'Negro-Azul', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-78-azuloscuro.jpg' },
+        { nombre: 'Cafe-Negro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-78-verde.jpg' },
+        { nombre: 'Multicolor', hex: 'linear-gradient(90deg, red, orange, yellow, green, blue, violet)', img: 'images/imagenes calzado/calzado-78.jpg' }
+    ]],
+
 ];
+
+
+
+
+
 
 
 // ===== RELOJES =====
