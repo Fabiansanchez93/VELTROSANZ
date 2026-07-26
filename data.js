@@ -161,11 +161,12 @@ const productosCalzado = [
     //Nº 72 viene con 6 estilos de color: gris claro, gris oscuro, gris rata, blanco, rojo, multicolor
     ['Botín Nike', 145000, 'tenis', true, 72, [
         { nombre: 'Gris-Claro', hex: '#cec8c8', img: 'images/imagenes calzado/calzado-72-gris.jpg' },
-        { nombre: 'Gris-Oscuro', hex: '#7e7a78', img: 'images/imagenes calzado/calzado-72-gris-oscuro.jpg' },
+        { nombre: 'Gris-Negro', hex: '#7e7a78', img: 'images/imagenes calzado/calzado-72-gris-oscuro.jpg' },
         { nombre: 'Gris-Rata', hex: '#767679', img: 'images/imagenes calzado/calzado-72-grisoscuro.jpg' },
         { nombre: 'Blanco', hex: '#f9f9fc', img: 'images/imagenes calzado/calzado-72-blanco.jpg' },
-        { nombre: 'Rojo', hex: '#ee130b', img: 'images/imagenes calzado/calzado-72-rojo.jpg' },
-        { nombre: 'Blanco-Negro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-74-Blanco-negro.jpg' },
+        { nombre: 'Rojo-Negro', hex: '#ee130b', img: 'images/imagenes calzado/calzado-72-rojo.jpg' },
+        { nombre: 'Blanco-Negro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-72-Blanco-negro.jpg' },
+        { nombre: 'Negro-Gris', hex: 'linear-gradient(90deg, #1a1a1a, #808080)', img: 'images/imagenes calzado/calzado-72-negromate.jpg' },
         { nombre: 'Multicolor', hex: 'linear-gradient(90deg, red, orange, yellow, green, blue, violet)', img: 'images/imagenes calzado/calzado-72-colores.jpg' }
     ]],
 
