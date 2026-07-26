@@ -193,11 +193,22 @@ const productosCalzado = [
         { nombre: 'Multicolor', hex: 'linear-gradient(90deg, red, orange, yellow, green, blue, violet)', img: 'images/imagenes calzado/calzado-78.jpg' }
     ]],
 
-    // Nº 32 viene en dos colores: Crema (calzado-32) y Negro (calzado-32-negro)
+    // Nº 79 viene en dos colores: Crema (calzado-79) y Negro (calzado-79-negro)
     ['Tenis Casual', 150000, 'tenis', true, 79, [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-79-negro.jpg' },
         { nombre: 'Blanco', hex: '#fffff', img: 'images/imagenes calzado/calzado-79.jpg' }
     ]],
+
+    // Nº 80 viene en tres colores: rosa, cafe
+    ['Tenis Retro', 150000, 'tenis', true, 80, [
+        { nombre: 'Gris-Rosa', hex: '#ff69b4', img: 'images/imagenes calzado/calzado-80-rosa.jpg' },
+        { nombre: 'Gris-Café', hex: '#8f815c', img: 'images/imagenes calzado/calzado-80-cafe.jpg' },
+        { nombre: 'Gris-Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-80.jpg' }
+    ]],
+    ['Tenis Casual', 150000, 'tenis', true, 81, [
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-81.jpg' }
+    ]],
+
 
 
 ];
