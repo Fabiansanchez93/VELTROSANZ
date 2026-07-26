@@ -220,7 +220,9 @@ const productosCalzado = [
 
     // 84
     ['Zapatillas Diesel Negra  ', 150000, 'tenis', true, 84, [
-        { nombre: 'Blanco-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-84.jpg' }
+        { nombre: 'Negro-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-84.jpg' },
+                { nombre: 'Azul-Blanco', hex: '#0f584ff6', img: 'images/imagenes calzado/calzado-90.jpg' }
+
     ]],
 
     // Nº 85 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
@@ -236,8 +238,26 @@ const productosCalzado = [
         { nombre: 'Blanco-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-87.jpg' }
     ]],
 
+    // Nº 89 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
+    ['Zapatilla Nike Café  ', 150000, 'tenis', true, 89, [
+        { nombre: 'Blanco-Gris', hex: '#5c5656f6', img: 'images/imagenes calzado/calzado-89.jpg' }
+    ]],
 
-    // Nº 92 viene en dos colores: Crema (calzado-79) y Negro (calzado-79-negro)
+    // Nº 91 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
+    ['Tenis adidas  ', 150000, 'tenis', true, 91, [
+        { nombre: 'Blanco', hex: '#f7f6f6f6', img: 'images/imagenes calzado/calzado-91.jpg' }
+    ]],
+
+
+
+
+
+
+
+
+
+
+    // Nº 92 viene en dos colores: Crema (calzado-92) y Negro (calzado-92-negro)
     ['Tenis Casual', 150000, 'tenis', true, 92, [
         { nombre: 'Negro-Naranja', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-92-naranja.jpg' },
         { nombre: 'Blanco-Gris', hex: '#fffff', img: 'images/imagenes calzado/calzado-92.jpg' },
