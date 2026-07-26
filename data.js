@@ -77,7 +77,6 @@ const productosCalzado = [
     // ── PRODUCTOS NUEVOS (26–45). Ajusta precios a los reales. ──
     ['Tenis Rojo Gamuza', 160000, 'tenis', true, 26],
     ['Tenis Blanco Detalle Verde', 150000, 'tenis', true, 27],
-    ['Tenis Blanco Pastel', 155000, 'tenis', true, 28],
 
     //N° 29 viene en dos colores: pastel (calzado 29) y café (calzado-29-cafe)
     ['Tenis multicolor', 160000, 'tenis', true, 29, [
@@ -86,7 +85,7 @@ const productosCalzado = [
     ]],
 
     // Nº 30 viene en dos colores: Blanco (calzado-30) y Morado (calzado-30-morado)
-    ['Tenis Multicolor', 180000, 'tenis', true, 30, [
+    ['Tenis Multicolor', 180000, 'casual', true, 30, [
         { nombre: 'Blanco', hex: '#e9e9e9', img: 'images/imagenes calzado/calzado-30.jpg' },
         { nombre: 'Morado', hex: '#8b5cf6', img: 'images/imagenes calzado/calzado-30-morado.jpg' }
     ]],
@@ -100,19 +99,19 @@ const productosCalzado = [
     ]],
 
     ['Tenis Azul y Blanco', 160000, 'tenis', true, 34],
-    ['Tenis Blanco y Rosa', 185000, 'tenis', true, 35],
+    ['Tenis Blanco y Rosa', 185000, 'casual', true, 35],
     ['Tenis Negro Rayas Blancas', 150000, 'tenis', true, 36],
-    ['Tenis Negro Deportivo', 148000, 'tenis', true, 37],
-    ['Tenis Beige Urbano', 155000, 'tenis', true, 38],
-    ['Tenis Azul y Rosa', 170000, 'tenis', true, 39],
-    ['Tenis Crema Minimalista', 160000, 'tenis', true, 40],
-    ['Tenis Blanco y Negro', 150000, 'tenis', true, 41],
+    ['Tenis Negro Deportivo', 148000, 'casual', true, 37],
+    ['Tenis Beige Urbano', 155000, 'casual', true, 38],
+    ['Tenis Azul y Rosa', 170000, 'casual', true, 39],
+    ['Tenis Crema Minimalista', 160000, 'casual', true, 40],
+    ['Tenis Blanco y Negro', 150000, 'casual', true, 41],
     ['Tenis Gris Deportivo', 145000, 'tenis', true, 42],
     ['Tenis Blanco y Morado', 155000, 'tenis', true, 43],
     ['Tenis Blanco y Gris', 150000, 'tenis', true, 44],
-    ['Tenis Vinotinto y Blanco', 165000, 'tenis', true, 45],
+    ['Tenis Vinotinto y Blanco', 165000, 'casual', true, 45],
 
-    ['Lacoste Verde', 160000, 'tenis', true, 46],
+    ['Lacoste Verde', 160000, 'casual', true, 46],
     ['Nike P6000 Rosa', 150000, 'tenis', true, 47],
     ['Zapatilla Negra- blanco', 165000, 'tenis', true, 48],
     ['Zapatilla Nike Blanco Negro', 160000, 'tenis', true, 49],
@@ -121,31 +120,31 @@ const productosCalzado = [
         { nombre: 'Rosa', hex: '#ddc6c6', img: 'images/imagenes calzado/calzado-50-rosa.jpg' },
         { nombre: 'Beige', hex: '#a8a1a1', img: 'images/imagenes calzado/calzado-50-beige.jpg' }
     ]],
-    ['Ralph Lauren', 160000, 'tenis', true, 52],
-    ['Zapatilla Armani', 165000, 'tenis', true, 53],
-    ['Tenis Adidas', 165000, 'tenis', true, 54],
-    ['Tenis Adidas', 145000, 'tenis', true, 55],
+    ['Ralph Lauren', 160000, 'casual', true, 52],
+    ['Zapatilla Armani', 165000, 'casual', true, 53],
+    ['Tenis Adidas', 165000, 'casual', true, 54],
+    ['Tenis Adidas', 145000, 'casual', true, 55],
 
-    ['Tenis Nike Classic', 150000, 'tenis', true, 56, [
+    ['Tenis Nike Classic', 150000, 'casual', true, 56, [
         { nombre: 'Blanco-Gris ', hex: '#bebab9dc', img: 'images/imagenes calzado/calzado-56.jpg' },
         { nombre: 'Blanco-estrellas', hex: '#bebab9dc', img: 'images/imagenes calzado/calzado-56-estrellas.jpg' },
         { nombre: 'Blanco-Negro', hex: '#130f0f', img: 'images/imagenes calzado/calzado-56-blanco negro.jpg' }
     ]],
 
     // Nº 100 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
-    ['Tenis Retro', 150000, 'tenis', true, 100, [
+    ['Tenis Retro', 150000, 'casual', true, 100, [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-100-negro.jpg' },
         { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-100-negroblanco.jpg' },
         { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-100-beigeclaro.jpg' },
         { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-100.jpg' }
     ]],
 
-    ['Adidas-Equip', 150000, 'tenis', true, 61],
+    ['Adidas-Equip', 150000, 'casual', true, 61],
     ['Adidas Color verde', 150000, 'tenis', true, 62],
-    ['Adidas Campus', 150000, 'tenis', true, 63],
+    ['Adidas Campus', 150000, 'casual', true, 63],
     ['New Balance 9060', 160000, 'tenis', true, 64],
-    ['Gucci', 145000, 'tenis', true, 66],
-    ['Adidas Air Force', 145000, 'tenis', true, 67],
+    ['Gucci', 145000, 'casual', true, 66],
+    ['Adidas Air Force', 145000, 'casual', true, 67],
 
     ['Nike Blanco-Gris', 145000, 'tenis', true, 68],
 
@@ -155,7 +154,7 @@ const productosCalzado = [
         { nombre: 'Naranja/Negro', hex: '#e64f09', img: 'images/imagenes calzado/calzado-69-naranja.jpg' },
         { nombre: 'Azul', hex: '#0000ff', img: 'images/imagenes calzado/calzado-69.jpg' }
     ]],
-    ['Nike Black', 145000, 'tenis', true, 70],
+    ['Nike Black', 145000, 'casual', true, 70],
     ['Jordan Air Max', 145000, 'tenis', true, 71],
 
     //Nº 72 viene con 6 estilos de color: gris claro, gris oscuro, gris rata, blanco, rojo, multicolor
@@ -176,7 +175,7 @@ const productosCalzado = [
         { nombre: 'Naranja', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-74-naranja.jpg' },
         { nombre: 'Rojo-Negro', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-74.jpg' }
     ]],
-    ['Tenis Casual', 150000, 'tenis', true, 76, [
+    ['Tenis Veja', 150000, 'casual', true, 76, [
         { nombre: 'Blanco', hex: '#ffff', img: 'images/imagenes calzado/calzado-76.jpg' }
     ]],
 
@@ -194,7 +193,7 @@ const productosCalzado = [
     ]],
 
     // Nº 79 viene en dos colores: Crema (calzado-79) y Negro (calzado-79-negro)
-    ['Tenis Casual', 150000, 'tenis', true, 79, [
+    ['Tenis QC', 150000, 'casual', true, 79, [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-79-negro.jpg' },
         { nombre: 'Blanco', hex: '#fffff', img: 'images/imagenes calzado/calzado-79.jpg' }
     ]],
@@ -205,7 +204,7 @@ const productosCalzado = [
         { nombre: 'Gris-Café', hex: '#8f815c', img: 'images/imagenes calzado/calzado-80-cafe.jpg' },
         { nombre: 'Gris-Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-80.jpg' }
     ]],
-    ['Tenis Casual', 150000, 'tenis', true, 81, [
+    ['Tenis Lecoc', 150000, 'casual', true, 81, [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-81.jpg' }
     ]],
 
@@ -219,9 +218,9 @@ const productosCalzado = [
     ]],
 
     // 84
-    ['Zapatillas Diesel Negra  ', 150000, 'tenis', true, 84, [
+    ['Zapatillas Diesel Negra  ', 150000, 'Casual', true, 84, [
         { nombre: 'Negro-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-84.jpg' },
-                { nombre: 'Azul-Blanco', hex: '#0f584ff6', img: 'images/imagenes calzado/calzado-90.jpg' }
+        { nombre: 'Azul-Blanco', hex: '#0f584ff6', img: 'images/imagenes calzado/calzado-90.jpg' }
 
     ]],
 
@@ -244,26 +243,17 @@ const productosCalzado = [
     ]],
 
     // Nº 91 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
-    ['Tenis adidas  ', 150000, 'tenis', true, 91, [
+    ['Tenis adidas  ', 150000, 'Casual', true, 91, [
         { nombre: 'Blanco', hex: '#f7f6f6f6', img: 'images/imagenes calzado/calzado-91.jpg' }
     ]],
 
-
-
-
-
-
-
-
-
-
     // Nº 92 viene en dos colores: Crema (calzado-92) y Negro (calzado-92-negro)
-    ['Tenis Casual', 150000, 'tenis', true, 92, [
+    ['Tenis Adidas', 150000, 'tenis', true, 92, [
         { nombre: 'Negro-Naranja', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-92-naranja.jpg' },
         { nombre: 'Blanco-Gris', hex: '#fffff', img: 'images/imagenes calzado/calzado-92.jpg' },
     ]],
 
-    ['Tenis Adidas', 150000, 'tenis', true, 93, [
+    ['Tenis Adidas', 150000, 'casual', true, 93, [
         { nombre: 'Café-Amarillo', hex: '#f7e011f6', img: 'images/imagenes calzado/calzado-93.jpg' },
         { nombre: 'Negro-Verde', hex: '#138005f6', img: 'images/imagenes calzado/calzado-93-tigre.jpg' },
         { nombre: 'Café-Rosa', hex: '#eea2a2f6', img: 'images/imagenes calzado/calzado-92-rosa.jpg' }
@@ -277,13 +267,32 @@ const productosCalzado = [
         { nombre: 'Blanco-Gris', hex: '#f7f1f1f6', img: 'images/imagenes calzado/calzado-95.jpg' }
     ]],
 
-    ['Zapatillas retro blanco-gris ', 150000, 'tenis', true, 96, [
+    ['Zapatillas retro blanco-gris ', 150000, 'casual', true, 96, [
         { nombre: 'Blanco-Gris', hex: '#f7f1f1f6', img: 'images/imagenes calzado/calzado-96.jpg' }
     ]],
 
     ['Zapatillas Nike Negra ', 150000, 'tenis', true, 98, [
         { nombre: 'Blanco-Gris', hex: '#080808f6', img: 'images/imagenes calzado/calzado-98.jpg' }
     ]],
+
+    // Nº 99 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
+    ['Tenis Retro', 150000, 'tenis', true, 99, [
+        { nombre: 'Blanco-Azul', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-99-azul.jpg' },
+        { nombre: 'Blanco-Gris', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-99-gris.jpg' },
+        { nombre: 'Blanco-Negro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-99-negro.jpg' },
+        { nombre: 'Marrón-Rosa ', hex: '#d463af', img: 'images/imagenes calzado/calzado-99-rosa.jpg' },
+        { nombre: 'Negro ', hex: '#080808', img: 'images/imagenes calzado/calzado-99.jpg' }
+    ]],
+
+    ['Zapatillas Adidas Azul ', 150000, 'tenis', true, 101, [
+        { nombre: 'Azul cielo', hex: '#0fe3ebf6', img: 'images/imagenes calzado/calzado-101.jpg' }
+    ]],
+
+    ['Tenis Casual ', 150000, 'casual', true, 102, [
+        { nombre: 'Azul cielo', hex: '#0fe3ebf6', img: 'images/imagenes calzado/calzado-102.jpg' }
+    ]],
+
+
 
 
 
