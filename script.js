@@ -254,15 +254,18 @@ const CATALOGOS = {
 // ===== MENSAJES DE WHATSAPP (según disponibilidad) =====
 // Disponible -> pregunta normal de compra.
 // Agotado    -> pide que le avisen cuando vuelva a llegar.
-function mensajeWhatsApp(nombre, disponible, color, talla) {
+function mensajeWhatsApp(nombre, disponible, color, talla, enlace) {
     let texto = disponible
-        ? `Hola 👋 Me interesa *${nombre}*`
-        : `Hola 👋 ¿Me puedes avisar cuando vuelva a estar disponible *${nombre}*?`;
+        ? `Hola \u{1F44B} Me interesa *${nombre}*`
+        : `Hola \u{1F44B} ¿Me puedes avisar cuando vuelva a estar disponible *${nombre}*?`;
     if (color) texto += ` en color *${color}*`;
     if (talla) texto += ` en talla *${talla}* (EU)`;
     if (disponible) texto += ` ¿Está disponible?`;
+    if (enlace) texto += `\n\n${enlace}`;
     return encodeURIComponent(texto);
+
 }
+
 
 // ===== RENDERIZADO DINÁMICO DE TARJETAS DE PRODUCTO =====
 function crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo, idx) {
@@ -351,7 +354,8 @@ function renderizarProductoDetalle() {
     // Reconstruye el enlace de WhatsApp según disponibilidad + color + talla elegidos
     function actualizarWhatsApp() {
         if (waBtn) {
-            waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeWhatsApp(nombre, disponible, colorSeleccionado, tallaSeleccionada)}`;
+            const enlaceProducto = window.location.href;
+            waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeWhatsApp(nombre, disponible, colorSeleccionado, tallaSeleccionada, enlaceProducto)}`;
         }
     }
 
