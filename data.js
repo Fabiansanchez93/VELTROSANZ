@@ -72,7 +72,7 @@ const productosCalzado = [
     ['Tenis Rojo Gamuza', 160000, 'tenis', true, 26],
     ['Tenis Blanco Detalle Verde', 150000, 'tenis', true, 27],
     //N° 29 viene en dos colores: pastel (calzado 29) y café (calzado-29-cafe)
-    ['Tenis multicolor', 160000, 'tenis', true, 29, [
+    ['Tenis Nike Multicolor', 160000, 'tenis', true, 29, [
         { nombre: 'Pastel', hex: '#f0f0f0', img: 'images/imagenes calzado/calzado-29-pastel.jpg' },
         { nombre: 'Café', hex: '#8B4513', img: 'images/imagenes calzado/calzado-29.jpg' }
     ]],
