@@ -209,6 +209,33 @@ const productosCalzado = [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-81.jpg' }
     ]],
 
+    // Nº 92 viene en dos colores: Crema (calzado-79) y Negro (calzado-79-negro)
+    ['Tenis Casual', 150000, 'tenis', true, 92, [
+        { nombre: 'Negro-Naranja', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-92-naranja.jpg' },
+        { nombre: 'Blanco-Gris', hex: '#fffff', img: 'images/imagenes calzado/calzado-92.jpg' }
+    ]],
+
+    ['Tenis Adidas', 150000, 'tenis', true, 93, [
+        { nombre: 'Café-Vinotinto', hex: '#471d1df6', img: 'images/imagenes calzado/calzado-93.jpg' }
+    ]],
+    
+     ['Tenis Bota', 150000, 'tenis', true, 94, [
+        { nombre: 'Blanco-Azul', hex: '#f7f1f1f6', img: 'images/imagenes calzado/calzado-94.jpg' }
+    ]],
+
+     ['Zapatillas Nike', 150000, 'tenis', true, 95, [
+        { nombre: 'Blanco-Gris', hex: '#f7f1f1f6', img: 'images/imagenes calzado/calzado-95.jpg' }
+    ]],
+
+    ['Zapatillas retro blanco-gris ', 150000, 'tenis', true, 96, [
+        { nombre: 'Blanco-Gris', hex: '#f7f1f1f6', img: 'images/imagenes calzado/calzado-96.jpg' }
+    ]],
+
+    ['Zapatillas Nike Negra ', 150000, 'tenis', true, 98, [
+        { nombre: 'Blanco-Gris', hex: '#080808f6', img: 'images/imagenes calzado/calzado-98.jpg' }
+    ]],
+
+
 
 
 ];
