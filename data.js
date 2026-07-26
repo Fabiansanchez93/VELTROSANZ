@@ -171,11 +171,20 @@ const productosCalzado = [
     ]],
 
     // Nº 74 viene en cuatro colores: Negro, Naranja, chicle Blanco y Negro
-    ['Tenis Retro', 150000, 'tenis', true, 74, [
+    ['Tenis Nike', 150000, 'tenis', true, 74, [
         { nombre: 'Chicle', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-74-chicle.jpg' },
         { nombre: 'Naranja', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-74-naranja.jpg' },
         { nombre: 'Rojo-Negro', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-74.jpg' }
     ]],
+    ['Tenis Casual', 150000, 'tenis', true, 76, [
+        { nombre: 'Blanco', hex: '#ffff', img: 'images/imagenes calzado/calzado-76.jpg' }
+    ]],
+
+    ['Zapatillas Nike', 150000, 'tenis', true, 77, [
+    { nombre: 'Blanco', hex: '#ffffff', img: 'images/imagenes calzado/calzado-77.jpg' },
+    { nombre: 'Rosa Claro', hex: '#ffc0cb', img: 'images/imagenes calzado/calzado-77-rosa.jpg' },
+    { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-77-negro.jpg' }
+]],
 
 ];
 
