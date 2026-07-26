@@ -209,6 +209,18 @@ const productosCalzado = [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-81.jpg' }
     ]],
 
+    ['Zapatillas Nike Blanca  ', 150000, 'tenis', true, 82, [
+        { nombre: 'Blanco-Gris', hex: '#fcf5f5f6', img: 'images/imagenes calzado/calzado-82.jpg' }
+    ]],
+
+    ['Zapatillas Diesel Negra  ', 150000, 'tenis', true, 83, [
+        { nombre: 'Blanco-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-83.jpg' }
+    ]],
+
+    ['Zapatillas Diesel Negra  ', 150000, 'tenis', true, 84, [
+        { nombre: 'Blanco-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-84.jpg' }
+    ]],
+
     // Nº 92 viene en dos colores: Crema (calzado-79) y Negro (calzado-79-negro)
     ['Tenis Casual', 150000, 'tenis', true, 92, [
         { nombre: 'Negro-Naranja', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-92-naranja.jpg' },
