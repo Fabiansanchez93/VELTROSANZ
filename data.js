@@ -256,10 +256,6 @@ const productosCalzado = [
     ]],
 
 
-
-
-
-
 ];
 
 
@@ -269,7 +265,7 @@ const productosCalzado = [
 
 
 
-// ===== RELOJES =====
+// ===== TODOS LOS RELOJES =====
 const productosRelojes = [
     ['Reloj Clásico Hombre 01', 180000, 'hombre', true, 1],
     ['Reloj Clásico Hombre 02', 180000, 'hombre', true, 2],
@@ -278,18 +274,23 @@ const productosRelojes = [
     ['Reloj Clásico Hombre 05', 180000, 'hombre', true, 5],
     ['Reloj Clásico Hombre 06', 180000, 'hombre', true, 6],
     ['Reloj Clásico Hombre 07', 180000, 'hombre', true, 7],
-    ['Reloj Digital Naviforce Hombre 01', 125000, 'hombre', true, 8],
-    ['Reloj Digital Naviforce Hombre 02', 125000, 'hombre', true, 9],
-    ['Reloj Digital Naviforce Hombre 03', 125000, 'hombre', true, 10],
-    ['Reloj Digital Naviforce Mujer 01', 125000, 'mujer', true, 11],
+
+
+    // Nº 08 viene en siete colores: rosa, cafe
+    ['Reloj Navi Force', 150000, 'tenis', true, 08, [
+        { nombre: 'Azul plata', hex: '#1b0ceb', img: 'images/imagenes relojes/reloj-08-azul.jpg' },
+        { nombre: 'Dorado', hex: '#8f815c', img: 'images/imagenes relojes/reloj-08-dorado.jpg' },
+        { nombre: 'Gris', hex: '#a7a0a3', img: 'images/imagenes relojes/reloj-08-gris-trans.jpg' },
+        { nombre: 'Gris', hex: '#a7a0a3', img: 'images/imagenes relojes/reloj-08-gris.jpg' },
+        { nombre: 'Morado', hex: '#a937d3', img: 'images/imagenes relojes/reloj-08-morado.jpg' },
+        { nombre: 'Negro-Dorado', hex: '#1a1a1a', img: 'images/imagenes relojes/reloj-08-negro-dorado.jpg' },
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes relojes/reloj-08.jpg' }
+
+    ]],
+
     ['Reloj Elegante Mujer 02', 125000, 'mujer', true, 12],
     ['Reloj Elegante Mujer 03', 125000, 'mujer', true, 13],
-    ['Reloj Digital Naviforce Mujer 02', 125000, 'mujer', true, 14],
     ['Reloj Elegante Mujer 05', 135000, 'mujer', true, 15],
-    ['Reloj Digital Naviforce Mujer 03', 125000, 'mujer', true, 16],
-    ['Reloj Digital Naviforce Mujer 04', 125000, 'mujer', true, 17],
-    ['Reloj Digital Naviforce Mujer 05', 125000, 'mujer', true, 18],
-
     // N° 35 viene en 4 colores: Rojo, Azul, Negro y Verde.
     // Nº 35 viene en 4 colores: Rojo, Azul, Negro y Verde.
     ['Reloj JoeFox', 120000, 'Hombre', true, 35, [
@@ -300,7 +301,10 @@ const productosRelojes = [
     ]],
 ];
 
-// ===== CORREAS =====
+
+
+
+// ===== TODAS LASCORREAS =====
 // (renombra correa-hombre-01.jpg a correa-01.jpg).
 const productosCorreas = [
     ['Correa de Cuero Hombre Café', 65000, 'hombre', true, 1],

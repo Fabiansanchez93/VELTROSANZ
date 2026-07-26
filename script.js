@@ -281,10 +281,7 @@ if (slides.length > 0) {
     }
 }
 
-// ===== CONTADOR DE VISITAS (GLOBAL, con CountAPI) =====
-// Usa countapi.mileshilliard.com: el número se guarda en un servidor, así que
-// suma las visitas de TODOS los dispositivos (tu cel, tu amigo, tu tío...),
-// no solo las de tu propio navegador.
+
 //   - Primera visita de la sesión  -> /hit  (suma +1 al total global)
 //   - Recargar o navegar entre páginas en la misma sesión -> /get (solo consulta)
 const VISITAS_KEY = 'veltrosanz_store_visitas_fabiansanchez93'; // clave única: NO la cambies
