@@ -193,7 +193,15 @@ const productosCalzado = [
         { nombre: 'Multicolor', hex: 'linear-gradient(90deg, red, orange, yellow, green, blue, violet)', img: 'images/imagenes calzado/calzado-78.jpg' }
     ]],
 
+    // Nº 32 viene en dos colores: Crema (calzado-32) y Negro (calzado-32-negro)
+    ['Tenis Casual', 150000, 'tenis', true, 79, [
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-79-negro.jpg' },
+        { nombre: 'Blanco', hex: '#fffff', img: 'images/imagenes calzado/calzado-79.jpg' }
+    ]],
+
+
 ];
+
 
 
 
