@@ -276,10 +276,9 @@ function crearProductoCard(nombre, precio, categoria, disponible, numImg, tipo, 
 
     // El botón "Ver detalles" NO se muestra en lociones.
     // En calzado, relojes y correas sí sigue apareciendo con normalidad.
-    const btnDetalles = tipo === 'lociones'
-        ? ''
-        : `<a href="producto.html?tipo=${tipo}&idx=${idx}">Ver detalles</a>`;
+    const btnDetalles = `<a href="producto.html?tipo=${tipo}&idx=${idx}">Ver detalles</a>`;
 
+    
     // Botón de WhatsApp: cambia el texto según disponibilidad.
     // Disponible -> "WhatsApp" (verde). Agotado -> "Avísame cuando llegue" (gris).
     const btnWhatsApp = disponible
@@ -433,6 +432,9 @@ function renderizarProductoDetalle() {
     }
     if (descEl && tipo === 'correas') {
         descEl.textContent = DESCRIPCION_CORREA[categoria] || DESCRIPCION_CORREA.hombre;
+    }
+    if (descEl && tipo === 'lociones') {
+        descEl.textContent = `Loción original ${nombre}. Escríbenos por WhatsApp para conocer disponibilidad, presentación y coordinar tu pedido.`;
     }
 
     // Las tallas solo aplican a calzado; se ocultan para relojes, lociones y correas
