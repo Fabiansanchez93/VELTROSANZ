@@ -165,7 +165,6 @@ const productosCalzado = [
     ['Adidas Color verde', 150000, 'tenis', true, 62],
     ['Adidas Campus', 150000, 'tenis', true, 63],
     ['New Balance 9060', 160000, 'tenis', true, 64],
-    ['Calvin Klein', 145000, 'tenis', true, 65],
     ['Gucci', 145000, 'tenis', true, 66],
     ['Adidas Air Force', 145000, 'tenis', true, 67],
 
@@ -178,8 +177,6 @@ const productosCalzado = [
         { nombre: 'Azul', hex: '#0000ff', img: 'images/imagenes calzado/calzado-69.jpg' }
     ]],
     ['Nike Black', 145000, 'tenis', true, 70],
-
-
 ];
 
 
