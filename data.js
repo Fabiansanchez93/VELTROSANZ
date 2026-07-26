@@ -77,7 +77,7 @@ const productosCalzado = [
         { nombre: 'Café', hex: '#8B4513', img: 'images/imagenes calzado/calzado-29.jpg' }
     ]],
     // Nº 30 viene en dos colores: Blanco (calzado-30) y Morado (calzado-30-morado)
-    ['Tenis Multicolor', 180000, 'casual', true, 30, [
+    ['Tenis Multicolor', 180000, 'tenis', true, 30, [
         { nombre: 'Blanco', hex: '#e9e9e9', img: 'images/imagenes calzado/calzado-30.jpg' },
         { nombre: 'Morado', hex: '#8b5cf6', img: 'images/imagenes calzado/calzado-30-morado.jpg' }
     ]],
@@ -87,7 +87,7 @@ const productosCalzado = [
         { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-32-negro.jpg' }
     ]],
     ['Tenis Azul y Blanco', 160000, 'tenis', true, 34],
-    ['Tenis Blanco y Rosa', 185000, 'casual', true, 35],
+    ['Tenis Blanco y Rosa', 185000, 'tenis', true, 35],
     ['Tenis Negro Rayas Blancas', 150000, 'tenis', true, 36],
     ['Tenis Negro Deportivo', 148000, 'casual', true, 37],
     ['Tenis Beige Urbano', 155000, 'casual', true, 38],
@@ -206,7 +206,7 @@ const productosCalzado = [
         { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-85.jpg' }
     ]],
     // Nº 87 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
-    ['Bota Under Negra  ', 150000, 'tenis', true, 87, [
+    ['Bota Under Negra  ', 150000, 'casual', true, 87, [
         { nombre: 'Blanco-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-87.jpg' }
     ]],
     // Nº 89 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
