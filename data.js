@@ -221,6 +221,14 @@ const productosCalzado = [
         { nombre: 'Blanco-Gris', hex: '#0f0e0ef6', img: 'images/imagenes calzado/calzado-84.jpg' }
     ]],
 
+    // Nº 85 viene en cuatro colores: Negro, Blanco/Negro, Beige claro y Beige
+    ['Tenis Retro', 150000, 'tenis', true, 85, [
+        { nombre: 'Negro', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-85-negro.jpg' },
+        { nombre: 'Blanco/Negro', hex: '#e8e8e8', img: 'images/imagenes calzado/calzado-85-blanco.jpg' },
+        { nombre: 'Beige claro', hex: '#e5dcc3', img: 'images/imagenes calzado/calzado-85-cafe.jpg' },
+        { nombre: 'Beige ', hex: '#d9c9a8', img: 'images/imagenes calzado/calzado-85.jpg' }
+    ]],
+
     // Nº 92 viene en dos colores: Crema (calzado-79) y Negro (calzado-79-negro)
     ['Tenis Casual', 150000, 'tenis', true, 92, [
         { nombre: 'Negro-Naranja', hex: '#1a1a1a', img: 'images/imagenes calzado/calzado-92-naranja.jpg' },
